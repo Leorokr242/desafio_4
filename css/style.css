@@ -65,6 +65,12 @@ header nav div{
 .estiloLogo {
     width: 80px;
     height: 80px;  
+
+    transition: 1s;
+}
+.estiloLogo:hover {
+    width: 100px;
+    height: 100px;
 }
 
 .botones { 
@@ -73,12 +79,17 @@ header nav div{
     padding: 15px;
     border-radius: 5px;
     color: azure;
-    
-    
+
+    perspective: 2500;
+    transition: 2s ease;
 }
 .botones a{
     text-decoration: none;  
     color: azure; 
+}
+
+.botones:hover {
+    transform: rotate(360deg);
 }
 
 /* MAIN  */
@@ -86,7 +97,7 @@ header nav div{
 main {
     width: 100vw;
     height: 70vh;
-    margin-top: 20vh;
+    margin: 20vh 0 -5vh 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -114,6 +125,8 @@ main {
 footer {
     width: 100vw;
     height: 15vh; 
+    position: fixed;
+    /* margin-bottom: -15vh; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -192,6 +205,8 @@ footer {
         height: 150vh;
     }
     header {
+        position: inherit;
+        margin-top: 0vh;
         height: 20vh;
         background-color: blanchedalmond;
     }
@@ -205,6 +220,11 @@ footer {
 
         background-color: blanchedalmond;
     
+    }
+
+    footer {
+        position: inherit;
+       
     }
   
 
